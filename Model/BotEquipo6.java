@@ -17,6 +17,7 @@ public class BotEquipo6 extends Bot {
     public void analizarEstrategia() throws Exception {
 //        System.out.println("impresión de ciclos: " + ciclos);
         ciclos++;
+
         if (ciclos == 60) {
 //            sirve para reasignar la heurísticapara evitar quedarse en ella para siempre
 //            JOptionPane.showMessageDialog(null, "EL BOT 6 HA CAMBIADO SU LÍNEA ");
