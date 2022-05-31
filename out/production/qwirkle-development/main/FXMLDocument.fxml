@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane id="AnchorPane" prefHeight="470.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.FXMLDocumentController">
+    <children>
+      <ImageView fitHeight="476.0" fitWidth="769.0" pickOnBounds="true" >
+         <image>
+            <Image url="@../Imagenes/madera.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="56.0" layoutX="560.0" layoutY="22.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-width: 8; -fx-arc-height: 8;" width="189.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="30.0" layoutX="489.0" layoutY="332.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-width: 8; -fx-arc-height: 8;" width="257.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="58.0" layoutX="492.0" layoutY="87.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-width: 8; -fx-arc-height: 8;" width="257.0" />
+      <ImageView fx:id="imgperfil" fitHeight="56.0" fitWidth="56.0" layoutX="493.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" >
+         <image>
+            <Image url="@../Imagenes/Vulpixs.jpg" />
+         </image>
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" height="10.0" radius="4.5" width="10.0" />
+         </effect>
+      </ImageView>
+      <Label layoutX="615.0" layoutY="42.0" text="Turno: Jugador" />
+      <GridPane gridLinesVisible="true" layoutX="20.0" layoutY="20.0" style="-fx-background-color: transparent; -fx-border-color: BLACK; -fx-border-width: 2px;">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="24.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="24.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="24.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="24.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="24.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="24.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="24.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="24.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="24.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="24.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="24.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="24.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="24.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="24.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="24.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="24.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="24.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="24.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fx:id="casilla_0_0" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="casilla_1_0" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" />
+            <ImageView fx:id="casilla_2_0" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" />
+            <ImageView fx:id="casilla_3_0" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" />
+            <ImageView fx:id="casilla_4_0" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" />
+            <ImageView fx:id="casilla_5_0" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" />
+            <ImageView fx:id="casilla_6_0" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" />
+            <ImageView fx:id="casilla_7_0" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" />
+            <ImageView fx:id="casilla_8_0" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" />
+            <ImageView fx:id="casilla_9_0" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" />
+            <ImageView fx:id="casilla_10_0" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" />
+            <ImageView fx:id="casilla_11_0" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" />
+            <ImageView fx:id="casilla_12_0" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" />
+            <ImageView fx:id="casilla_13_0" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="13" />
+            <ImageView fx:id="casilla_14_0" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="14" />
+            <ImageView fx:id="casilla_15_0" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="15" />
+            <ImageView fx:id="casilla_16_0" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="16" />
+            <ImageView fx:id="casilla_17_0" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="17" />
+            <ImageView fx:id="casilla_0_1" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1" />
+            <ImageView fx:id="casilla_1_1" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <ImageView fx:id="casilla_2_1" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <ImageView fx:id="casilla_3_1" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <ImageView fx:id="casilla_4_1" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <ImageView fx:id="casilla_5_1" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <ImageView fx:id="casilla_6_1" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+            <ImageView fx:id="casilla_7_1" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+            <ImageView fx:id="casilla_8_1" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+            <ImageView fx:id="casilla_9_1" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="1" />
+            <ImageView fx:id="casilla_10_1" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="1" />
+            <ImageView fx:id="casilla_11_1" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="1" />
+            <ImageView fx:id="casilla_12_1" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="1" />
+            <ImageView fx:id="casilla_13_1" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="13" GridPane.rowIndex="1" />
+            <ImageView fx:id="casilla_14_1" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="14" GridPane.rowIndex="1" />
+            <ImageView fx:id="casilla_15_1" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="15" GridPane.rowIndex="1" />
+            <ImageView fx:id="casilla_16_1" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="16" GridPane.rowIndex="1" />
+            <ImageView fx:id="casilla_17_1" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="17" GridPane.rowIndex="1" />
+            <ImageView fx:id="casilla_0_2" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2" />
+            <ImageView fx:id="casilla_1_2" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <ImageView fx:id="casilla_2_2" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <ImageView fx:id="casilla_3_2" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <ImageView fx:id="casilla_4_2" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <ImageView fx:id="casilla_5_2" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <ImageView fx:id="casilla_6_2" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+            <ImageView fx:id="casilla_7_2" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+            <ImageView fx:id="casilla_8_2" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+            <ImageView fx:id="casilla_9_2" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="2" />
+            <ImageView fx:id="casilla_10_2" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="2" />
+            <ImageView fx:id="casilla_11_2" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="2" />
+            <ImageView fx:id="casilla_12_2" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="2" />
+            <ImageView fx:id="casilla_13_2" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="13" GridPane.rowIndex="2" />
+            <ImageView fx:id="casilla_14_2" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="14" GridPane.rowIndex="2" />
+            <ImageView fx:id="casilla_15_2" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="15" GridPane.rowIndex="2" />
+            <ImageView fx:id="casilla_16_2" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="16" GridPane.rowIndex="2" />
+            <ImageView fx:id="casilla_17_2" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="17" GridPane.rowIndex="2" />
+            <ImageView fx:id="casilla_0_3" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3" />
+            <ImageView fx:id="casilla_1_3" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <ImageView fx:id="casilla_2_3" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <ImageView fx:id="casilla_3_3" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <ImageView fx:id="casilla_4_3" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <ImageView fx:id="casilla_5_3" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <ImageView fx:id="casilla_6_3" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+            <ImageView fx:id="casilla_7_3" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+            <ImageView fx:id="casilla_8_3" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+            <ImageView fx:id="casilla_9_3" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="3" />
+            <ImageView fx:id="casilla_10_3" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="3" />
+            <ImageView fx:id="casilla_11_3" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="3" />
+            <ImageView fx:id="casilla_12_3" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="3" />
+            <ImageView fx:id="casilla_13_3" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="13" GridPane.rowIndex="3" />
+            <ImageView fx:id="casilla_14_3" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="14" GridPane.rowIndex="3" />
+            <ImageView fx:id="casilla_15_3" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="15" GridPane.rowIndex="3" />
+            <ImageView fx:id="casilla_16_3" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="16" GridPane.rowIndex="3" />
+            <ImageView fx:id="casilla_17_3" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="17" GridPane.rowIndex="3" />
+            <ImageView fx:id="casilla_0_4" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="4" />
+            <ImageView fx:id="casilla_1_4" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <ImageView fx:id="casilla_2_4" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <ImageView fx:id="casilla_3_4" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <ImageView fx:id="casilla_4_4" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <ImageView fx:id="casilla_5_4" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <ImageView fx:id="casilla_6_4" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+            <ImageView fx:id="casilla_7_4" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+            <ImageView fx:id="casilla_8_4" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="4" />
+            <ImageView fx:id="casilla_9_4" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="4" />
+            <ImageView fx:id="casilla_10_4" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="4" />
+            <ImageView fx:id="casilla_11_4" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="4" />
+            <ImageView fx:id="casilla_12_4" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="4" />
+            <ImageView fx:id="casilla_13_4" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="13" GridPane.rowIndex="4" />
+            <ImageView fx:id="casilla_14_4" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="14" GridPane.rowIndex="4" />
+            <ImageView fx:id="casilla_15_4" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="15" GridPane.rowIndex="4" />
+            <ImageView fx:id="casilla_16_4" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="16" GridPane.rowIndex="4" />
+            <ImageView fx:id="casilla_17_4" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="17" GridPane.rowIndex="4" />
+            <ImageView fx:id="casilla_0_5" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="5" />
+            <ImageView fx:id="casilla_1_5" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <ImageView fx:id="casilla_2_5" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <ImageView fx:id="casilla_3_5" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <ImageView fx:id="casilla_4_5" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <ImageView fx:id="casilla_5_5" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <ImageView fx:id="casilla_6_5" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+            <ImageView fx:id="casilla_7_5" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+            <ImageView fx:id="casilla_8_5" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="5" />
+            <ImageView fx:id="casilla_9_5" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="5" />
+            <ImageView fx:id="casilla_10_5" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="5" />
+            <ImageView fx:id="casilla_11_5" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="5" />
+            <ImageView fx:id="casilla_12_5" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="5" />
+            <ImageView fx:id="casilla_13_5" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="13" GridPane.rowIndex="5" />
+            <ImageView fx:id="casilla_14_5" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="14" GridPane.rowIndex="5" />
+            <ImageView fx:id="casilla_15_5" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="15" GridPane.rowIndex="5" />
+            <ImageView fx:id="casilla_16_5" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="16" GridPane.rowIndex="5" />
+            <ImageView fx:id="casilla_17_5" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="17" GridPane.rowIndex="5" />
+            <ImageView fx:id="casilla_0_6" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="6" />
+            <ImageView fx:id="casilla_1_6" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <ImageView fx:id="casilla_2_6" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <ImageView fx:id="casilla_3_6" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <ImageView fx:id="casilla_4_6" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <ImageView fx:id="casilla_5_6" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+            <ImageView fx:id="casilla_6_6" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+            <ImageView fx:id="casilla_7_6" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="6" />
+            <ImageView fx:id="casilla_8_6" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="6" />
+            <ImageView fx:id="casilla_9_6" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="6" />
+            <ImageView fx:id="casilla_10_6" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="6" />
+            <ImageView fx:id="casilla_11_6" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="6" />
+            <ImageView fx:id="casilla_12_6" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="6" />
+            <ImageView fx:id="casilla_13_6" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="13" GridPane.rowIndex="6" />
+            <ImageView fx:id="casilla_14_6" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="14" GridPane.rowIndex="6" />
+            <ImageView fx:id="casilla_15_6" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="15" GridPane.rowIndex="6" />
+            <ImageView fx:id="casilla_16_6" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="16" GridPane.rowIndex="6" />
+            <ImageView fx:id="casilla_17_6" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="17" GridPane.rowIndex="6" />
+            <ImageView fx:id="casilla_0_7" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="7" />
+            <ImageView fx:id="casilla_1_7" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <ImageView fx:id="casilla_2_7" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <ImageView fx:id="casilla_3_7" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <ImageView fx:id="casilla_4_7" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+            <ImageView fx:id="casilla_5_7" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+            <ImageView fx:id="casilla_6_7" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+            <ImageView fx:id="casilla_7_7" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="7" />
+            <ImageView fx:id="casilla_8_7" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="7" />
+            <ImageView fx:id="casilla_9_7" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="7" />
+            <ImageView fx:id="casilla_10_7" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="7" />
+            <ImageView fx:id="casilla_11_7" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="7" />
+            <ImageView fx:id="casilla_12_7" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="7" />
+            <ImageView fx:id="casilla_13_7" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="13" GridPane.rowIndex="7" />
+            <ImageView fx:id="casilla_14_7" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="14" GridPane.rowIndex="7" />
+            <ImageView fx:id="casilla_15_7" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="15" GridPane.rowIndex="7" />
+            <ImageView fx:id="casilla_16_7" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="16" GridPane.rowIndex="7" />
+            <ImageView fx:id="casilla_17_7" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="17" GridPane.rowIndex="7" />
+            <ImageView fx:id="casilla_0_8" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="8" />
+            <ImageView fx:id="casilla_1_8" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <ImageView fx:id="casilla_2_8" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+            <ImageView fx:id="casilla_3_8" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+            <ImageView fx:id="casilla_4_8" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+            <ImageView fx:id="casilla_5_8" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+            <ImageView fx:id="casilla_6_8" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="8" />
+            <ImageView fx:id="casilla_7_8" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="8" />
+            <ImageView fx:id="casilla_8_8" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="8" />
+            <ImageView fx:id="casilla_9_8" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="8" />
+            <ImageView fx:id="casilla_10_8" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="8" />
+            <ImageView fx:id="casilla_11_8" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="8" />
+            <ImageView fx:id="casilla_12_8" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="8" />
+            <ImageView fx:id="casilla_13_8" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="13" GridPane.rowIndex="8" />
+            <ImageView fx:id="casilla_14_8" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="14" GridPane.rowIndex="8" />
+            <ImageView fx:id="casilla_15_8" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="15" GridPane.rowIndex="8" />
+            <ImageView fx:id="casilla_16_8" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="16" GridPane.rowIndex="8" />
+            <ImageView fx:id="casilla_17_8" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="17" GridPane.rowIndex="8" />
+            <ImageView fx:id="casilla_0_9" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="9" />
+            <ImageView fx:id="casilla_1_9" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <ImageView fx:id="casilla_2_9" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+            <ImageView fx:id="casilla_3_9" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+            <ImageView fx:id="casilla_4_9" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="9" />
+            <ImageView fx:id="casilla_5_9" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="9" />
+            <ImageView fx:id="casilla_6_9" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="9" />
+            <ImageView fx:id="casilla_7_9" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="9" />
+            <ImageView fx:id="casilla_8_9" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="9" />
+            <ImageView fx:id="casilla_9_9" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="9" />
+            <ImageView fx:id="casilla_10_9" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="9" />
+            <ImageView fx:id="casilla_11_9" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="9" />
+            <ImageView fx:id="casilla_12_9" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="9" />
+            <ImageView fx:id="casilla_13_9" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="13" GridPane.rowIndex="9" />
+            <ImageView fx:id="casilla_14_9" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="14" GridPane.rowIndex="9" />
+            <ImageView fx:id="casilla_15_9" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="15" GridPane.rowIndex="9" />
+            <ImageView fx:id="casilla_16_9" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="16" GridPane.rowIndex="9" />
+            <ImageView fx:id="casilla_17_9" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="17" GridPane.rowIndex="9" />
+            <ImageView fx:id="casilla_0_10" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="10" />
+            <ImageView fx:id="casilla_1_10" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+            <ImageView fx:id="casilla_2_10" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+            <ImageView fx:id="casilla_3_10" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="10" />
+            <ImageView fx:id="casilla_4_10" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="10" />
+            <ImageView fx:id="casilla_5_10" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="10" />
+            <ImageView fx:id="casilla_6_10" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="10" />
+            <ImageView fx:id="casilla_7_10" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="10" />
+            <ImageView fx:id="casilla_8_10" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="10" />
+            <ImageView fx:id="casilla_9_10" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="10" />
+            <ImageView fx:id="casilla_10_10" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="10" />
+            <ImageView fx:id="casilla_11_10" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="10" />
+            <ImageView fx:id="casilla_12_10" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="10" />
+            <ImageView fx:id="casilla_13_10" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="13" GridPane.rowIndex="10" />
+            <ImageView fx:id="casilla_14_10" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="14" GridPane.rowIndex="10" />
+            <ImageView fx:id="casilla_15_10" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="15" GridPane.rowIndex="10" />
+            <ImageView fx:id="casilla_16_10" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="16" GridPane.rowIndex="10" />
+            <ImageView fx:id="casilla_17_10" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="17" GridPane.rowIndex="10" />
+            <ImageView fx:id="casilla_0_11" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="11" />
+            <ImageView fx:id="casilla_1_11" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+            <ImageView fx:id="casilla_2_11" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="11" />
+            <ImageView fx:id="casilla_3_11" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="11" />
+            <ImageView fx:id="casilla_4_11" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="11" />
+            <ImageView fx:id="casilla_5_11" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="11" />
+            <ImageView fx:id="casilla_6_11" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="11" />
+            <ImageView fx:id="casilla_7_11" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="11" />
+            <ImageView fx:id="casilla_8_11" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="11" />
+            <ImageView fx:id="casilla_9_11" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="11" />
+            <ImageView fx:id="casilla_10_11" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="11" />
+            <ImageView fx:id="casilla_11_11" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="11" />
+            <ImageView fx:id="casilla_12_11" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="11" />
+            <ImageView fx:id="casilla_13_11" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="13" GridPane.rowIndex="11" />
+            <ImageView fx:id="casilla_14_11" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="14" GridPane.rowIndex="11" />
+            <ImageView fx:id="casilla_15_11" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="15" GridPane.rowIndex="11" />
+            <ImageView fx:id="casilla_16_11" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="16" GridPane.rowIndex="11" />
+            <ImageView fx:id="casilla_17_11" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="17" GridPane.rowIndex="11" />
+            <ImageView fx:id="casilla_0_12" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="12" />
+            <ImageView fx:id="casilla_1_12" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+            <ImageView fx:id="casilla_2_12" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="12" />
+            <ImageView fx:id="casilla_3_12" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="12" />
+            <ImageView fx:id="casilla_4_12" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="12" />
+            <ImageView fx:id="casilla_5_12" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="12" />
+            <ImageView fx:id="casilla_6_12" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="12" />
+            <ImageView fx:id="casilla_7_12" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="12" />
+            <ImageView fx:id="casilla_8_12" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="12" />
+            <ImageView fx:id="casilla_9_12" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="12" />
+            <ImageView fx:id="casilla_10_12" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="12" />
+            <ImageView fx:id="casilla_11_12" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="12" />
+            <ImageView fx:id="casilla_12_12" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="12" />
+            <ImageView fx:id="casilla_13_12" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="13" GridPane.rowIndex="12" />
+            <ImageView fx:id="casilla_14_12" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="14" GridPane.rowIndex="12" />
+            <ImageView fx:id="casilla_15_12" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="15" GridPane.rowIndex="12" />
+            <ImageView fx:id="casilla_16_12" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="16" GridPane.rowIndex="12" />
+            <ImageView fx:id="casilla_17_12" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="17" GridPane.rowIndex="12" />
+            <ImageView fx:id="casilla_0_13" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="13" />
+            <ImageView fx:id="casilla_1_13" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+            <ImageView fx:id="casilla_2_13" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="13" />
+            <ImageView fx:id="casilla_3_13" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="13" />
+            <ImageView fx:id="casilla_4_13" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="13" />
+            <ImageView fx:id="casilla_5_13" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="13" />
+            <ImageView fx:id="casilla_6_13" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="13" />
+            <ImageView fx:id="casilla_7_13" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="13" />
+            <ImageView fx:id="casilla_8_13" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="13" />
+            <ImageView fx:id="casilla_9_13" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="13" />
+            <ImageView fx:id="casilla_10_13" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="13" />
+            <ImageView fx:id="casilla_11_13" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="13" />
+            <ImageView fx:id="casilla_12_13" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="13" />
+            <ImageView fx:id="casilla_13_13" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="13" GridPane.rowIndex="13" />
+            <ImageView fx:id="casilla_14_13" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="14" GridPane.rowIndex="13" />
+            <ImageView fx:id="casilla_15_13" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="15" GridPane.rowIndex="13" />
+            <ImageView fx:id="casilla_16_13" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="16" GridPane.rowIndex="13" />
+            <ImageView fx:id="casilla_17_13" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="17" GridPane.rowIndex="13" />
+            <ImageView fx:id="casilla_0_14" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="14" />
+            <ImageView fx:id="casilla_1_14" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+            <ImageView fx:id="casilla_2_14" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="14" />
+            <ImageView fx:id="casilla_3_14" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="14" />
+            <ImageView fx:id="casilla_4_14" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="14" />
+            <ImageView fx:id="casilla_5_14" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="14" />
+            <ImageView fx:id="casilla_6_14" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="14" />
+            <ImageView fx:id="casilla_7_14" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="14" />
+            <ImageView fx:id="casilla_8_14" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="14" />
+            <ImageView fx:id="casilla_9_14" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="14" />
+            <ImageView fx:id="casilla_10_14" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="14" />
+            <ImageView fx:id="casilla_11_14" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="14" />
+            <ImageView fx:id="casilla_12_14" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="14" />
+            <ImageView fx:id="casilla_13_14" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="13" GridPane.rowIndex="14" />
+            <ImageView fx:id="casilla_14_14" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="14" GridPane.rowIndex="14" />
+            <ImageView fx:id="casilla_15_14" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="15" GridPane.rowIndex="14" />
+            <ImageView fx:id="casilla_16_14" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="16" GridPane.rowIndex="14" />
+            <ImageView fx:id="casilla_17_14" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="17" GridPane.rowIndex="14" />
+            <ImageView fx:id="casilla_0_15" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="15" />
+            <ImageView fx:id="casilla_1_15" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+            <ImageView fx:id="casilla_2_15" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="15" />
+            <ImageView fx:id="casilla_3_15" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="15" />
+            <ImageView fx:id="casilla_4_15" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="15" />
+            <ImageView fx:id="casilla_5_15" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="15" />
+            <ImageView fx:id="casilla_6_15" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="15" />
+            <ImageView fx:id="casilla_7_15" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="15" />
+            <ImageView fx:id="casilla_8_15" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="15" />
+            <ImageView fx:id="casilla_9_15" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="15" />
+            <ImageView fx:id="casilla_10_15" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="15" />
+            <ImageView fx:id="casilla_11_15" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="15" />
+            <ImageView fx:id="casilla_12_15" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="15" />
+            <ImageView fx:id="casilla_13_15" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="13" GridPane.rowIndex="15" />
+            <ImageView fx:id="casilla_14_15" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="14" GridPane.rowIndex="15" />
+            <ImageView fx:id="casilla_15_15" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="15" GridPane.rowIndex="15" />
+            <ImageView fx:id="casilla_16_15" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="16" GridPane.rowIndex="15" />
+            <ImageView fx:id="casilla_17_15" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="17" GridPane.rowIndex="15" />
+            <ImageView fx:id="casilla_0_16" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="16" />
+            <ImageView fx:id="casilla_1_16" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="16" />
+            <ImageView fx:id="casilla_2_16" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="16" />
+            <ImageView fx:id="casilla_3_16" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="16" />
+            <ImageView fx:id="casilla_4_16" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="16" />
+            <ImageView fx:id="casilla_5_16" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="16" />
+            <ImageView fx:id="casilla_6_16" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="16" />
+            <ImageView fx:id="casilla_7_16" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="16" />
+            <ImageView fx:id="casilla_8_16" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="16" />
+            <ImageView fx:id="casilla_9_16" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="16" />
+            <ImageView fx:id="casilla_10_16" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="16" />
+            <ImageView fx:id="casilla_11_16" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="16" />
+            <ImageView fx:id="casilla_12_16" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="16" />
+            <ImageView fx:id="casilla_13_16" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="13" GridPane.rowIndex="16" />
+            <ImageView fx:id="casilla_14_16" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="14" GridPane.rowIndex="16" />
+            <ImageView fx:id="casilla_15_16" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="15" GridPane.rowIndex="16" />
+            <ImageView fx:id="casilla_16_16" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="16" GridPane.rowIndex="16" />
+            <ImageView fx:id="casilla_17_16" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="17" GridPane.rowIndex="16" />
+            <ImageView fx:id="casilla_0_17" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="17" />
+            <ImageView fx:id="casilla_1_17" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="17" />
+            <ImageView fx:id="casilla_2_17" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="17" />
+            <ImageView fx:id="casilla_3_17" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="17" />
+            <ImageView fx:id="casilla_4_17" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="17" />
+            <ImageView fx:id="casilla_5_17" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="17" />
+            <ImageView fx:id="casilla_6_17" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="17" />
+            <ImageView fx:id="casilla_7_17" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="17" />
+            <ImageView fx:id="casilla_8_17" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="17" />
+            <ImageView fx:id="casilla_9_17" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="17" />
+            <ImageView fx:id="casilla_10_17" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="17" />
+            <ImageView fx:id="casilla_11_17" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="17" />
+            <ImageView fx:id="casilla_12_17" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="12" GridPane.rowIndex="17" />
+            <ImageView fx:id="casilla_13_17" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="13" GridPane.rowIndex="17" />
+            <ImageView fx:id="casilla_14_17" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="14" GridPane.rowIndex="17" />
+            <ImageView fx:id="casilla_15_17" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="15" GridPane.rowIndex="17" />
+            <ImageView fx:id="casilla_16_17" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="16" GridPane.rowIndex="17" />
+            <ImageView fx:id="casilla_17_17" fitHeight="24.0" fitWidth="24.0" onMouseClicked="#ponerFicha" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="17" GridPane.rowIndex="17" />
+         </children>
+      </GridPane>
+      <ImageView fx:id="ficha_n1" fitHeight="34.0" fitWidth="34.0" layoutX="491.0" layoutY="196.0" onMouseClicked="#seleccionarFicha" pickOnBounds="true" preserveRatio="true" >
+         <image>
+            <Image url="@../Fichas/Ficha1.png" />
+         </image>
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" height="10.0" radius="4.5" width="10.0" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="ficha_n4" fitHeight="34.0" fitWidth="34.0" layoutX="490.0" layoutY="244.0" onMouseClicked="#seleccionarFicha" pickOnBounds="true" preserveRatio="true" >
+         <image>
+            <Image url="@../Fichas/Ficha2.png" />
+         </image>
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" height="10.0" radius="4.5" width="10.0" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="ficha_n2" fitHeight="34.0" fitWidth="34.0" layoutX="541.0" layoutY="196.0" onMouseClicked="#seleccionarFicha" pickOnBounds="true" preserveRatio="true" >
+         <image>
+            <Image url="@../Fichas/Ficha100.png" />
+         </image>
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" height="10.0" radius="4.5" width="10.0" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="ficha_n5" fitHeight="34.0" fitWidth="34.0" layoutX="541.0" layoutY="244.0" onMouseClicked="#seleccionarFicha" pickOnBounds="true" preserveRatio="true" >
+         <image>
+            <Image url="@../Fichas/Ficha50.png" />
+         </image>
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" height="10.0" radius="4.5" width="10.0" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="ficha_n3" fitHeight="34.0" fitWidth="34.0" layoutX="590.0" layoutY="196.0" onMouseClicked="#seleccionarFicha" pickOnBounds="true" preserveRatio="true" >
+         <image>
+            <Image url="@../Fichas/Ficha70.png" />
+         </image>
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" height="10.0" radius="4.5" width="10.0" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="ficha_n6" fitHeight="34.0" fitWidth="34.0" layoutX="590.0" layoutY="244.0" onMouseClicked="#seleccionarFicha" pickOnBounds="true" preserveRatio="true" >
+         <image>
+            <Image url="@../Fichas/Ficha72.png" />
+         </image>
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" height="10.0" radius="4.5" width="10.0" />
+         </effect>
+      </ImageView>
+      <Button fx:id="cf" layoutX="632.0" layoutY="373.0" mnemonicParsing="false" prefHeight="82.0" prefWidth="115.0" text="Cambiar Fichas" />
+      <Button fx:id="tt" layoutX="632.0" layoutY="197.0" mnemonicParsing="false" onAction="#terminarTurno" prefHeight="82.0" prefWidth="115.0" text="Terminar Turno" />
+      <Label layoutX="580.0" layoutY="339.0" text="Zona de cambio" />
+      <ImageView fx:id="ficha_cambio_n1" fitHeight="34.0" fitWidth="34.0" layoutX="489.0" layoutY="374.0" pickOnBounds="true" preserveRatio="true" >
+         <image>
+            <Image url="@../Fichas/Ficha0.png" />
+         </image>
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" height="10.0" radius="4.5" width="10.0" />
+         </effect></ImageView>
+      <ImageView fx:id="ficha_cambio_n4" fitHeight="34.0" fitWidth="34.0" layoutX="489.0" layoutY="422.0" pickOnBounds="true" preserveRatio="true" >
+         <image>
+            <Image url="@../Fichas/Ficha0.png" />
+         </image>
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" height="10.0" radius="4.5" width="10.0" />
+         </effect></ImageView>
+      <ImageView fx:id="ficha_cambio_n2" fitHeight="34.0" fitWidth="34.0" layoutX="539.0" layoutY="374.0" pickOnBounds="true" preserveRatio="true" >
+         <image>
+            <Image url="@../Fichas/Ficha0.png" />
+         </image>
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" height="10.0" radius="4.5" width="10.0" />
+         </effect></ImageView>
+      <ImageView fx:id="ficha_cambio_n5" fitHeight="34.0" fitWidth="34.0" layoutX="539.0" layoutY="422.0" pickOnBounds="true" preserveRatio="true" >
+         <image>
+            <Image url="@../Fichas/Ficha0.png" />
+         </image>
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" height="10.0" radius="4.5" width="10.0" />
+         </effect></ImageView>
+      <ImageView fx:id="ficha_cambio_n3" fitHeight="34.0" fitWidth="34.0" layoutX="589.0" layoutY="374.0" pickOnBounds="true" preserveRatio="true" >
+         <image>
+            <Image url="@../Fichas/Ficha0.png" />
+         </image>
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" height="10.0" radius="4.5" width="10.0" />
+         </effect></ImageView>
+      <ImageView fx:id="ficha_cambio_n6" fitHeight="34.0" fitWidth="34.0" layoutX="589.0" layoutY="422.0" pickOnBounds="true" preserveRatio="true" >
+         <image>
+            <Image url="@../Fichas/Ficha0.png" />
+         </image>
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" height="10.0" radius="4.5" width="10.0" />
+         </effect></ImageView>
+      <Label layoutX="518.0" layoutY="118.0" text="J1:" />
+      <Label layoutX="568.0" layoutY="118.0" text="J2:" />
+      <Label layoutX="618.0" layoutY="118.0" text="J3:" />
+       <Label layoutX="678.0" layoutY="118.0" text="J4:" />
+      <Label layoutX="567.0" layoutY="97.0" text="Puntajes del juego:" />
+      <Label fx:id="pj1" layoutX="537.0" layoutY="118.0" text="0pts" />
+      <Label fx:id="pj2" layoutX="587.0" layoutY="118.0" text="0pts" />
+      <Label fx:id="pj3" layoutX="637.0" layoutY="118.0" text="0pts" />
+      <Label fx:id="pj4" layoutX="697.0" layoutY="118.0" text="0pts" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="30.0" layoutX="491.0" layoutY="157.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-width: 8; -fx-arc-height: 8;" width="257.0" />
+      <Label layoutX="568.0" layoutY="164.0" text="Cartas del jugador" />
+      <Button layoutX="490.0" layoutY="291.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="257.0" text="Deshacer movimiento" />
+    </children>
+</AnchorPane>

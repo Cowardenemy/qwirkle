@@ -1,0 +1,96 @@
+[33mcommit 316013bd21c6572000f00593b0f94e9f6d4dd0be[m[33m ([m[1;36mHEAD -> [m[1;32mdevelopment[m[33m, [m[1;31morigin/development[m[33m)[m
+Merge: 7140f4c f724d88
+Author: jerryperezperez <59417562+jerryperezperez@users.noreply.github.com>
+Date:   Sat Apr 23 23:33:10 2022 -0500
+
+    Merge pull request #7 from Cowardenemy/development
+    
+    Reglas ocupado, color y forma lado izquierdo
+
+[33mcommit f724d881a57aab07a1cb34f5940a90d39d5451d9[m
+Author: Cowardenemy <64175818+Cowardenemy@users.noreply.github.com>
+Date:   Sat Apr 23 02:31:52 2022 -0500
+
+    Add files via upload
+
+[33mcommit 7140f4c813e600c784146f5808f7684ac17ec538[m
+Merge: 5b9cb7f c645bc5
+Author: jerryperezperez <59417562+jerryperezperez@users.noreply.github.com>
+Date:   Sat Apr 23 02:10:28 2022 -0500
+
+    Merge de rama Merge2
+
+[33mcommit c645bc5f19b7aacfb510ed2dbdb07c17948bd272[m[33m ([m[1;31morigin/Merge2[m[33m)[m
+Merge: 1312283 81815a9
+Author: jerryperezperez <59417562+jerryperezperez@users.noreply.github.com>
+Date:   Sat Apr 23 02:06:34 2022 -0500
+
+    Creación de reglas básicas
+
+[33mcommit 5b9cb7f94a065f0852f24f00f7eac19558194af2[m
+Merge: 6278c91 9d66b19
+Author: jerryperezperez <59417562+jerryperezperez@users.noreply.github.com>
+Date:   Mon Apr 11 16:19:49 2022 -0500
+
+    Evento onMouseClicked agregado a las casillas
+    
+    Se les agregó el método de ponerFicha a todos los elementos de casilla en la interfaz
+
+[33mcommit 9d66b192e943ad54a40afbcbdc9510dbf545a6b6[m
+Author: DiegoHC06 <50012419+DiegoHC06@users.noreply.github.com>
+Date:   Mon Apr 11 15:50:59 2022 -0500
+
+     agregar el evento onMouseClicked
+
+[33mcommit 13122834cc50e1fdf5dbd87e49ff6d0fefe6a5bc[m[33m ([m[1;32motro[m[33m)[m
+Author: jerryperezperez <59417562+jerryperezperez@users.noreply.github.com>
+Date:   Mon Apr 4 22:55:43 2022 -0500
+
+    Merge pull request #2 from jerryperezperez/ramaMoises
+    
+    Cambios para Poner Ficha
+
+[33mcommit 6278c9114cdfff7fa0801403eaaba2cb73d5269a[m[33m ([m[1;32mcambios[m[33m)[m
+Merge: 45a5ba6 81815a9
+Author: jerryperezperez <59417562+jerryperezperez@users.noreply.github.com>
+Date:   Mon Apr 4 22:55:43 2022 -0500
+
+    Merge pull request #2 from jerryperezperez/ramaMoises
+    
+    Cambios para Poner Ficha
+
+[33mcommit 81815a9a01f99973ccb21db2a52d673ef36c1889[m[33m ([m[1;32mramaMoises[m[33m, [m[1;32mpr/1[m[33m)[m
+Author: Cowardenemy <64175818+Cowardenemy@users.noreply.github.com>
+Date:   Mon Apr 4 22:34:42 2022 -0500
+
+    DesarrolloPonerFicha
+    
+    xd puto el que lo lea
+
+[33mcommit 45a5ba61e777b70adc687b71adacac992fceaafc[m
+Author: jerryperezperez <jerryperezxbox@gmail.com>
+Date:   Wed Mar 30 01:06:01 2022 -0600
+
+    Update .gitignore
+    
+    Adding the files and folders created by intellij to .gitignore
+
+[33mcommit 253eccf3ea5ce1686e84acf18da7bff059f408b9[m
+Author: jerryperezperez <jerryperezxbox@gmail.com>
+Date:   Wed Mar 30 00:33:52 2022 -0600
+
+    Adding token folder
+
+[33mcommit de191b66dc422fe0bae7b69e91942efe9df51425[m
+Author: jerryperezperez <59417562+jerryperezperez@users.noreply.github.com>
+Date:   Wed Mar 30 00:25:50 2022 -0600
+
+    Adding existing files without token folder
+    
+    Token folder is missing
+
+[33mcommit 1d39b8fe9c539034364a43b85711a3993ef94dd1[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: jerryperezperez <59417562+jerryperezperez@users.noreply.github.com>
+Date:   Tue Mar 29 23:40:43 2022 -0600
+
+    Initial commit
